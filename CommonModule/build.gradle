@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.chinaclear.sz'
+version '0.0.1'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://mirrors.huaweicloud.com/repository/maven/'
+    }
+    maven{
+        url'https://mirrors.huaweicloud.com/repository/maven/'
+    }
+}
+
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+   // testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+

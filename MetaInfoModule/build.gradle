@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.chinaclear.sz'
+version '0.0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+  implementation project(':CommonModule')
+
+
+
+   // testCompile group: 'junit', name: 'junit', version: '4.12'
+}
