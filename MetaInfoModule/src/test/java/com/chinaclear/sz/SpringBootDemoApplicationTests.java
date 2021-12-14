@@ -1,6 +1,7 @@
-package cn.chinaclear.org;
+package com.chinaclear.sz;
 
-import cn.chinaclear.org.controller.BaseController;
+
+import com.chinaclear.sz.controller.BaseController;
 import junit.framework.TestCase;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

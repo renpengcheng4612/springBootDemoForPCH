@@ -1,4 +1,4 @@
-package cn.chinaclear.org.configuration;
+package com.chinaclear.sz.configuration;
 
 import org.springframework.context.annotation.Configuration;
 

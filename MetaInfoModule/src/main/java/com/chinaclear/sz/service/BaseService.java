@@ -1,4 +1,4 @@
-package cn.chinaclear.org.service;
+package com.chinaclear.sz.service;
 
 
 import org.springframework.stereotype.Service;

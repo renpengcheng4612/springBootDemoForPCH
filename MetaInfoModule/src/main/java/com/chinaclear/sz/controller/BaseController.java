@@ -1,7 +1,6 @@
-package cn.chinaclear.org.controller;
+package com.chinaclear.sz.controller;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
 

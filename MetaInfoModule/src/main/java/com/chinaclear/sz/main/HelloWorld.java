@@ -1,4 +1,4 @@
-package cn.chinaclear.org.main;
+package com.chinaclear.sz.main;
 
 
 import org.slf4j.Logger;
