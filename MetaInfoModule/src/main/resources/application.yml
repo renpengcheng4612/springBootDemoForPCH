@@ -10,7 +10,8 @@ spring:
     password: 123456 #配置在 配置中心
     # 使用druid数据连接池
     type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: com.mysql.cj.jdbc.Driver
+    #driverClassName: com.mysql.cj.jdbc.Driver
+    driverClassName: com.mysql.jdbc.Driver
     filters: stat
     maxActive: 20
     initialSize: 1
