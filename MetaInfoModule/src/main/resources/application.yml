@@ -3,25 +3,37 @@ server:
 
 # spring 的配置
 spring:
-  datasource:
-    # 基本属性
-    url: jdbc:mysql://localhost:3306/mytest
-    username: root #配置在 配置中心
-    password: 123456 #配置在 配置中心
-    # 使用druid数据连接池
-    type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: com.mysql.cj.jdbc.Driver
-    filters: stat
-    maxActive: 20
-    initialSize: 1
-    maxWait: 60000
-    minIdle: 1
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 300000
-    validationQuery: SELECT 'x' FROM DUAL
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-    poolPreparedStatements: true
-    maxOpenPreparedStatements: 20
+  profiles:
+    active: dev
+  application:
+    name:metainfo-backend
+  devtools:
+    restart:
+      enabled: true
+      exclude: static
 
+#  datasource:
+#    # 基本属性
+#    url: jdbc:mysql://localhost:3306/mytest
+#    username: root #配置在 配置中心
+#    password: 123456 #配置在 配置中心
+#    # 使用druid数据连接池
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driverClassName: com.mysql.cj.jdbc.Driver
+#    filters: stat
+#    maxActive: 20
+#    initialSize: 1
+#    maxWait: 60000
+#    minIdle: 1
+#    timeBetweenEvictionRunsMillis: 60000
+#    minEvictableIdleTimeMillis: 300000
+#    validationQuery: SELECT 'x' FROM DUAL
+#    testWhileIdle: true
+#    testOnBorrow: false
+#    testOnReturn: false
+#    poolPreparedStatements: true
+#    maxOpenPreparedStatements: 20
+
+logging:
+  level:
+    root: info
