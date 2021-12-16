@@ -15,14 +15,13 @@ import org.springframework.test.context.web.WebAppConfiguration;
 @WebAppConfiguration                     //进行web应用配置
 class SpringBootDemoApplicationTests {
 
-
     @Autowired
     private BaseController baseController;  // 注入控制器对象
-
 
     @Test
     void contextLoads() {    // 使用junit测试
         TestCase.assertEquals(this.baseController.home(), "www.baidu.com");
     }
+
 
 }
