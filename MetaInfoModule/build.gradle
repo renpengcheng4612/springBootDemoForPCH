@@ -2,7 +2,9 @@ archivesBaseName="metainfo-module"
 jar.enabled=true
 bootJar.enabled=true
 group 'com.chinaclear.sz'
-version '0.0.1'
+
+
+
 
 repositories {
     mavenCentral()

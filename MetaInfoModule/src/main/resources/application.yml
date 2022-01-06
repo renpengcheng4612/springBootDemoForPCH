@@ -1,5 +1,5 @@
 server:
-  port: 8088
+  port: 8888
 
 # spring 的配置
 spring:
@@ -12,14 +12,14 @@ spring:
       enabled: true
       exclude: static
 
-#  datasource:
-#    # 基本属性
-#    url: jdbc:mysql://localhost:3306/mytest
-#    username: root #配置在 配置中心
-#    password: 123456 #配置在 配置中心
-#    # 使用druid数据连接池
+  datasource:
+    # 基本属性
+    url: jdbc:mysql://localhost:3306/mytest
+    username: root #配置在 配置中心
+    password: 123456 #配置在 配置中心
+    # 使用druid数据连接池
 #    type: com.alibaba.druid.pool.DruidDataSource
-#    driverClassName: com.mysql.cj.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
 #    filters: stat
 #    maxActive: 20
 #    initialSize: 1
