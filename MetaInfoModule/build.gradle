@@ -1,9 +1,7 @@
-archivesBaseName="metainfo-module"
-jar.enabled=true
-bootJar.enabled=true
+archivesBaseName = "metainfo-module"
+jar.enabled = true
+bootJar.enabled = true
 group 'com.chinaclear.sz'
-
-
 
 
 repositories {
@@ -12,6 +10,7 @@ repositories {
 
 dependencies {
 
+    implementation 'org.projectlombok:lombok:1.18.20'
+    testImplementation 'junit:junit:4.13.2'
 
-implementation 'org.projectlombok:lombok:1.18.20'
 }
