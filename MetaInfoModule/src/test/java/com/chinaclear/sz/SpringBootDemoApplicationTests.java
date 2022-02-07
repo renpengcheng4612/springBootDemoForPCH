@@ -22,6 +22,4 @@ class SpringBootDemoApplicationTests {
     void contextLoads() {    // 使用junit测试
         TestCase.assertEquals(this.baseController.home(), "www.baidu.com");
     }
-
-
 }
