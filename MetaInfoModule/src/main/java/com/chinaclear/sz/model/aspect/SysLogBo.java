@@ -2,6 +2,9 @@ package com.chinaclear.sz.model.aspect;
 
 import lombok.Data;
 
+/*
+*  系统日志bo
+* */
 @Data
 public class SysLogBo {
 
