@@ -8,6 +8,5 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 public class MetaInfoModuleApplication {
     public static void main(String[] args) {
         SpringApplication.run(MetaInfoModuleApplication.class, args);
-
     }
 }

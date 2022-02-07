@@ -31,11 +31,10 @@ public class SysLogAspect {
      *  切点表达式: execution{...}
      * */
     @Pointcut("@annotation(com.chinaclear.sz.aspect.SysLog)")
-    public void logPointCut() {
-    }
+    public void logPointCut() {}
 
 
-    @Around("logPointCut")
+    @Around("logPointCut()")
     public Object around(ProceedingJoinPoint point) throws Throwable {
         long beginTime = System.currentTimeMillis();
         Object result = point.proceed();
