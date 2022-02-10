@@ -40,7 +40,9 @@ dependencies {
 
     testImplementation  'junit:junit:4.13.2'
 
+    // 引入 swagger
     implementation 'io.springfox:springfox-swagger2:2.9.2'
     implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+
     implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
 }

@@ -60,6 +60,7 @@ allprojects {
 
         implementation "io.springfox:springfox-boot-starter:3.0.0"
         implementation "com.github.xiaoymin:knife4j-spring-boot-starter:2.0.4"
+
         implementation "io.swagger:swagger-models:1.5.22"
         implementation "com.bmuschko:gradle-docker-plugin:6.6.1"
         implementation "com.google.guava:guava:29.0-jre"
@@ -88,9 +89,6 @@ allprojects {
         testImplementation "org.springframework.boot:spring-boot-starter-test"
         testImplementation  'org.junit.platform:junit-platform-launcher:1.6.2'
         testImplementation 'org.mockito:mockito-core:3.6.28'
-
-        //中台统一日志规范
-        // implementation 'cn.chinaclear.sz.bpmframework.common:common-web-spring-boot-starter:1.0.0-SNAPSHOT'
 
         //升级Log4j版本
         //implementation "org.apache. Logging. Log4j: Log4j-api:2.15.0"
