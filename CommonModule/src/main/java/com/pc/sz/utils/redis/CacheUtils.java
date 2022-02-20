@@ -8,13 +8,10 @@ import org.springframework.stereotype.Component;
 @Component
 @ConditionalOnBean(RedisTemplate.class)
 public class CacheUtils {
-
     // RedisTemplate 模板
-
     private RedisTemplate<String,Object>  redisTemplate;
 
     public CacheUtils(RedisTemplate<String,Object> redisTemplate){
         this.redisTemplate=redisTemplate;
     }
-
 }

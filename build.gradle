@@ -57,17 +57,15 @@ allprojects {
         implementation "org.springframework.boot:spring-boot-starter-actuator"
         implementation "io.micrometer:micrometer-registry-prometheus"
 
-
         implementation "io.springfox:springfox-boot-starter:3.0.0"
         implementation "com.github.xiaoymin:knife4j-spring-boot-starter:2.0.4"
-
         implementation "io.swagger:swagger-models:1.5.22"
         implementation "com.bmuschko:gradle-docker-plugin:6.6.1"
         implementation "com.google.guava:guava:29.0-jre"
         implementation "net.bytebuddy:byte-buddy:1.10.13"
         implementation "org.javassist:javassist:3.27.0-GA"
-
         implementation 'javax.xml.ws:jaxws-api:2.3.1'
+
         implementation "com.baomidou:mybatis-plus-boot-starter:3.3.0"
         implementation 'commons-pool:commons-pool:1.5.4'
         implementation 'org.apache.commons:commons-pool2'
@@ -75,21 +73,18 @@ allprojects {
         implementation 'commons-pool:commons-pool:1.5.4'
         implementation 'org.apache.commons:commons-pool2'
         implementation 'io.opentracing.contrib:opentracing-spring-jaeger-web-starter:3.3.1'
-
         //compileonly 'org.projectlombok:lombok:1.18.10'
 
         annotationProcessor 'org.projectlombok:lombok:1.18.10'
         developmentOnly "org.springframework.boot:spring-boot-devtools"
         annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
         testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
-
         testCompileOnly 'org.projectlombok:lombok:1.18.10'
-        testAnnotationProcessor 'org.projectlombok:lombok:1.18.10'
 
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.10'
         testImplementation "org.springframework.boot:spring-boot-starter-test"
         testImplementation  'org.junit.platform:junit-platform-launcher:1.6.2'
         testImplementation 'org.mockito:mockito-core:3.6.28'
-
         //升级Log4j版本
         //implementation "org.apache. Logging. Log4j: Log4j-api:2.15.0"
         //implementation "org.apache. logging.log4j:log4j-core:2.15.0"

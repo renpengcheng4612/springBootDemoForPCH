@@ -43,5 +43,5 @@ public class BaseController {
      * 关于传递参数的选择：
      *  在RestFul 架构中请求路径受多累语法支持，开发者可以结合HTTP 请求模式（Get,post,put,delete等）与路径，实现多种组合，以处理不同类型的用户请求。参数的传递模式可以由开发团队自行定义
      *
-     * */
+     */
 }
