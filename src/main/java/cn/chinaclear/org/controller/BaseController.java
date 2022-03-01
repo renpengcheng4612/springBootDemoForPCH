@@ -1,14 +1,12 @@
 package cn.chinaclear.org.controller;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
 
 @RestController     // 控制器注解
 @EnableAutoConfiguration  // 启用自动配置
-public class
-BaseController {
+public class BaseController {
     @RequestMapping("/")           // 表示访问映射路径，此时的路径为 "/" ,访问地址为 http://localhost:8080/
     @ResponseBody                   //RestFul返回形式
     public String home() {
