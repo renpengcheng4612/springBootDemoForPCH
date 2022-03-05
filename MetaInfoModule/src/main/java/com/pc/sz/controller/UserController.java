@@ -39,7 +39,6 @@ public class UserController {
     @ApiOperation(value = "userNameIsExist", httpMethod = "GET")
     @SysLog("测试")
     public HttpStatus userNameIsExist(@RequestParam String userName) {
-
         //1.判断用户名是否为空
         if (StringUtils.isBlank(userName)) {
             return HttpStatus.INTERNAL_SERVER_ERROR;

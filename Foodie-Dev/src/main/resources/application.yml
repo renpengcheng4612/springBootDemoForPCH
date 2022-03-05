@@ -1,0 +1,28 @@
+server:
+  port: 8888
+
+# spring 的配置
+spring:
+  profiles:
+    active: local
+  application:
+    name: foodie-dev
+  devtools:
+    restart:
+      enabled: true
+      exclude: static
+
+logging:
+  level:
+    root: info
+
+
+# 通用 Mapper 配置
+mapper:
+  mappers: com.pc.sz.mapper.MyMapper
+  not-empty: false    # 在进行数据库操作的的时候，判断表达式 username != null, 是否追加 username != ''
+  identity: MYSQL
+# 分页插件配置
+pagehelper:
+  helperDialect: mysql
+  supportMethodsArguments: true
