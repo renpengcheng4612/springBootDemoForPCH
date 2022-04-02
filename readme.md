@@ -1,4 +1,7 @@
-# S2I 原理及流程介绍
+# mybatis-plus 使用教程
 
 
-Source-to-image (S2I) 是一个直接将源代码构建成镜像的自动化构建工具，它是通过将源代码放入一个负责编译源代码的 构建器镜像(Builder image) 中，自动将编译后的代码打包成 Docker 镜像。
+MyBatis-Plus (opens new window)（简称 MP）是一个 MyBatis (opens new window)的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生 。
+
+
+image< >

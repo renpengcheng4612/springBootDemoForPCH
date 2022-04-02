@@ -5,8 +5,8 @@ server:
 spring:
   datasource:
     # 基本属性
-    # url: jdbc:mysql://192.168.40.129:3306/mybatis
-    url: jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=UTF8&serverTimezone=UTC
+    url: jdbc:mysql://192.168.43.128:3306/mybatis?useUnicode=true&characterEncoding=UTF8&serverTimezone=UTC
+    #url: jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=UTF8&serverTimezone=UTC
     username: root #配置在 配置中心
     password: 123456 #配置在 配置中心
     # 使用druid数据连接池

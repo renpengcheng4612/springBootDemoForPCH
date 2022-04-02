@@ -1,4 +1,4 @@
-package com.pc.sz.model;
+package com.pc.sz.bean;
 
 import lombok.Data;
 

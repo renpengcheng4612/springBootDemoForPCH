@@ -82,7 +82,6 @@ allprojects {
         testCompileOnly 'org.projectlombok:lombok:1.18.10'
 
         testAnnotationProcessor 'org.projectlombok:lombok:1.18.10'
-        testImplementation "org.springframework.boot:spring-boot-starter-test"
         testImplementation  'org.junit.platform:junit-platform-launcher:1.6.2'
         testImplementation 'org.mockito:mockito-core:3.6.28'
         //升级Log4j版本

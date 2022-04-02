@@ -2,5 +2,5 @@ rootProject.name = 'springBootDemo'
 include 'CommonModule'
 include 'MetaInfoModule'
 include 'Mybatis-plus-Test'
-include 'Foodie-Dev'
+include 'foodie-dev'
 

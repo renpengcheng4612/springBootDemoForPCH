@@ -14,13 +14,10 @@ spring:
 
 logging:
   level:
+    #根日志
     root: info
+    #对应包下的日志级别
     com.pc.sz.mapper: trace
-
-
-
-erp-url-info:
-  erp-url: ${ERP_URL:https://10.132.20.23:9082}
-  single-organization:
-    api-path: /uapws/rest/service/dept
-    headers: accessToken=${ERP_ACCESS_TOKEN:jjjjjjjk}
+  pattern:
+    # 日志格式
+    console: '%p%m%n'

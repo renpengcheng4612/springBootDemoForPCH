@@ -20,7 +20,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.chinaclear.sz"))
+                .apis(RequestHandlerSelectors.basePackage("com.pc.sz"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -31,7 +31,7 @@ public class SwaggerConfig {
                 .description("Gradle构建Spring boot项目 集成mybatis使用page helper插件 ，实现热部署")
                 //.termsOfServiceUrl("http://blog.csdn.net/chen1218chen")
                 //.contact("")
-                 .version("1.0")
+                .version("1.0")
                 .build();
     }
 }
