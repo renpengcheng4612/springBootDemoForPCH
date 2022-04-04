@@ -3,4 +3,5 @@ include 'CommonModule'
 include 'MetaInfoModule'
 include 'Mybatis-plus-Test'
 include 'foodie-dev'
+include 'mybatis-generator-for-imooc'
 

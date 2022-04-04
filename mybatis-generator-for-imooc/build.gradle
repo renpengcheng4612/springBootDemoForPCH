@@ -1,0 +1,33 @@
+archivesBaseName = "mybatis-generator-for-imooc"
+jar.enabled = true
+bootJar.enabled = true
+group 'com.pc.sz'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.projectlombok:lombok:1.18.20'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'org.springframework.boot:spring-boot-starter-aop:2.5.5'
+
+    // apache 工具类
+    implementation 'commons-codec:commons-codec:1.11'
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation 'org.apache.commons:commons-io:1.3.2'
+
+    // mybatis-generator-for-imooc 所在的包
+    implementation 'org.springframework.boot:spring-boot-starter-log4j:1.3.8.RELEASE'
+    implementation 'com.alibaba:druid:1.1.0'
+    //       <!-- 阿里开源数据源 -->
+    implementation 'com.alibaba:druid-spring-boot-starter:1.1.0'
+    implementation 'mysql:mysql-connector-java:5.1.41'
+    //        < !--mybatis-- >
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.1'
+   //     < !--mapper-- >
+    implementation 'tk.mybatis:mapper-spring-boot-starter:1.2.4'
+    implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.2.3'
+    implementation 'org.mybatis.generator:mybatis-generator-core:1.3.2'
+}
