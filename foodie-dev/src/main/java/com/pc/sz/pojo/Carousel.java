@@ -1,34 +1,37 @@
 package com.pc.sz.pojo;
 
-
-
+import javax.persistence.*;
 import java.util.Date;
 
 public class Carousel {
     /**
      * 主键
      */
-
+    @Id
     private String id;
 
     /**
      * 图片 图片地址
      */
+    @Column(name = "image_url")
     private String imageUrl;
 
     /**
      * 背景色
      */
+    @Column(name = "background_color")
     private String backgroundColor;
 
     /**
      * 商品id 商品id
      */
+    @Column(name = "item_id")
     private String itemId;
 
     /**
      * 商品分类id 商品分类id
      */
+    @Column(name = "cat_id")
     private String catId;
 
     /**
@@ -44,16 +47,19 @@ public class Carousel {
     /**
      * 是否展示
      */
+    @Column(name = "is_show")
     private Integer isShow;
 
     /**
      * 创建时间 创建时间
      */
+    @Column(name = "create_time")
     private Date createTime;
 
     /**
      * 更新时间 更新
      */
+    @Column(name = "update_time")
     private Date updateTime;
 
     /**

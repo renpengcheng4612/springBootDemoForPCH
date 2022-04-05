@@ -1,12 +1,9 @@
 buildscript {
     ext {
-        springBootVersion = '2.5.5'
+        springBootVersion = '2.2.1.RELEASE'
     }
     repositories {
         mavenCentral()
-        maven {
-            url 'https://mirrors.huaweicloud.com/repository/maven/'
-        }
         maven {
             url 'https://mirrors.huaweicloud.com/repository/maven/'
         }
@@ -43,7 +40,7 @@ allprojects {
 
     version = '1.0.0'
     group 'com.chinaclear.sz'
-    sourceCompatibility="11"
+    sourceCompatibility="8"
 
     dependencies {
         runtimeOnly "mysql:mysql-connector-java:8.0.16"
@@ -66,7 +63,7 @@ allprojects {
         implementation "org.javassist:javassist:3.27.0-GA"
         implementation 'javax.xml.ws:jaxws-api:2.3.1'
 
-        implementation "com.baomidou:mybatis-plus-boot-starter:3.3.0"
+    //    implementation "com.baomidou:mybatis-plus-boot-starter:3.3.0"
         implementation 'commons-pool:commons-pool:1.5.4'
         implementation 'org.apache.commons:commons-pool2'
 

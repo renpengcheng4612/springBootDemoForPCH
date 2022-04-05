@@ -37,7 +37,7 @@ public class ServiceLogAspect {
     * 第四处：* 代表类名，*代表所有的类
     * 第五处： *(..) * 代表类中的方法名,(..) 表示方法中的任何参数
     * */
-    //@Around("execution(* com.imooc.service.impl..*.*(..))")
+    //@Around("execution(* com.pc.sz.service.impl..*.*(..))")
     @Around("execution(* com.pc.sz.serviceImpl..*.*(..))")
     public Object recordTimeLog(ProceedingJoinPoint joinPoint) throws Throwable {
         log.info("=========================开始执行{}.{}==============================",

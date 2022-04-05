@@ -1,10 +1,12 @@
 package com.pc.sz.pojo;
 
+import javax.persistence.*;
 
 public class Category {
     /**
      * 主键
      */
+    @Id
     private Integer id;
 
     /**
@@ -20,6 +22,7 @@ public class Category {
     /**
      * 父id
      */
+    @Column(name = "father_id")
     private Integer fatherId;
 
     /**
@@ -35,11 +38,13 @@ public class Category {
     /**
      * 分类图
      */
+    @Column(name = "cat_image")
     private String catImage;
 
     /**
      * 背景颜色
      */
+    @Column(name = "bg_color")
     private String bgColor;
 
     /**

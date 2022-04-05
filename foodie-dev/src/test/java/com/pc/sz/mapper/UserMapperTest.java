@@ -18,16 +18,12 @@ import java.util.List;
 public class UserMapperTest {
 
     @Autowired
-    private UserMapper userMapper;
+    private UsersMapper usersMapper;
 
     @Test
     public void testSelect() {
         System.out.println(("----- selectAll method test ------"));
-        List<Users> users = userMapper.selectList(null);
-        log.info("----------------------[{}]----------------",users);
-     }
-
-
-
-
+        List<Users> users = usersMapper.selectAll();
+        log.info("---------------------------------[{}]", users);
+    }
 }

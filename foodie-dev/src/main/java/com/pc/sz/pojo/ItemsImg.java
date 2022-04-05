@@ -1,16 +1,20 @@
 package com.pc.sz.pojo;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Table(name = "items_img")
 public class ItemsImg {
     /**
      * 图片主键
      */
+    @Id
     private String id;
 
     /**
      * 商品外键id 商品外键id
      */
+    @Column(name = "item_id")
     private String itemId;
 
     /**
@@ -26,18 +30,19 @@ public class ItemsImg {
     /**
      * 是否主图 是否主图，1：是，0：否
      */
+    @Column(name = "is_main")
     private Integer isMain;
 
     /**
      * 创建时间
      */
-
+    @Column(name = "created_time")
     private Date createdTime;
 
     /**
      * 更新时间
      */
-
+    @Column(name = "updated_time")
     private Date updatedTime;
 
     /**

@@ -1,16 +1,20 @@
 package com.pc.sz.pojo;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Table(name = "user_address")
 public class UserAddress {
     /**
      * 地址主键id
      */
+    @Id
     private String id;
 
     /**
      * 关联用户id
      */
+    @Column(name = "user_id")
     private String userId;
 
     /**
@@ -51,18 +55,19 @@ public class UserAddress {
     /**
      * 是否默认地址
      */
+    @Column(name = "is_default")
     private Integer isDefault;
 
     /**
      * 创建时间
      */
-
+    @Column(name = "created_time")
     private Date createdTime;
 
     /**
      * 更新时间
      */
-
+    @Column(name = "updated_time")
     private Date updatedTime;
 
     /**

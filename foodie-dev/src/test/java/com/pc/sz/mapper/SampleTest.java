@@ -1,13 +1,13 @@
 package com.pc.sz.mapper;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
+/*import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.pc.sz.pojo.Users;
 import com.pc.sz.util.MD5Utils;
 import org.assertj.core.util.Lists;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.Test;*/
 import org.junit.runner.RunWith;
 import com.pc.sz.idworker.Sid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ import java.util.*;
 @RunWith(SpringRunner.class)
 public class SampleTest {
 
-    @Autowired
+   /* @Autowired
     private UserMapper userMapper;
 
     @Autowired
@@ -35,7 +35,7 @@ public class SampleTest {
     @Test
     public void testSelect() {
         System.out.println(("----- selectAll method test ------"));
-        List<Users> users = userMapper.selectList(null);
+       List<Users> users = userMapper.selectList(null);
         Assert.assertEquals(6, users.size());
         users.forEach(System.out::println);
     }
@@ -179,5 +179,5 @@ public class SampleTest {
         lambdaQuery.like(Users::getRealname, "任").lt(Users::getAge, 40);
         List<Users> users = userMapper.selectList(lambdaQuery);
         users.forEach(System.out::println);
-    }
+    }*/
 }

@@ -1,4 +1,4 @@
-package com.imooc.mybatis.utils;
+package com.pc.sz.mybatis.utils;
 
 import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.config.Configuration;
@@ -27,7 +27,6 @@ public class GeneratorDisplay {
         MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config,
                 callback, warnings);
         myBatisGenerator.generate(null);
-
     }
 
     public static void main(String[] args) throws Exception {
